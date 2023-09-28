@@ -17,8 +17,6 @@ export class AppComponent implements OnInit{
 
   ngOnInit(): void {
 
-    const imageUrl = "https://api.nasa.gov/planetary/apod?api_key=Twisz2wDRJsAHoqdW3LtnWzoJA04d8atgGgOiIIU"
-
     this.nasaService.getImageOfTheDay().subscribe(imgFromNasa => {
     this.imgOfTheDay = imgFromNasa;
     console.log(imgFromNasa);
